@@ -1,0 +1,16 @@
+{% extends 'accounts/profile_friends_view.html' %}
+
+{% block title %}
+Поиск друзей.
+{% endblock %}
+
+{% block content2 %}
+<form method="get">
+  {% csrf_token %}
+
+  {% for u in users %}
+  <p>{{ u.first_name }} {{ u.last_name }} <a class="btn btn-light" href="{% url 'profile_view_url' u.username %}">Перейти на страницу</a> <a class="btn btn-light" href="">Добавить в друзья</a></p>
+  {% endfor %}
+
+</form>
+{% endblock %}

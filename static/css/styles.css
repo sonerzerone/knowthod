@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin:0;
+  padding:0;
+  height:auto !important;
+  height:100% !important;
+  min-height:100%;
+}
+
+.admin-panel {
+  border: 1px solid #999;
+  border-radius: 2px;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  opacity: 0.5;
+  padding: 15px;
+}
+
+.admin-panel:hover {
+  opacity: 1;
+}
+
+.admin-panel a {
+  display: block;
+  margin: 5px 0;
+}
+
+a.edit, a.delete {
+  display: none;
+}
+
+a.create {
+  display: block;
+}
+
+.messages-panel {
+  border-radius: 1px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  opacity: 0.9;
+  width: 265px;
+}

@@ -1,0 +1,22 @@
+{% extends 'tasks/base_tasks.html' %}
+
+{% block title %}
+Просмотр кода
+{% endblock %}
+
+{% block content %}
+<form method="get">
+  {{ send.task.title|title }}
+  <br>
+  {{ send.code|linebreaks }}
+  <br>
+  {{ send.status }}
+  <br>
+  {{ send.error }}
+  <br>
+  {% for test in tests %}
+    Входные данные: {{ test.input }} | Выходные даные: {{ test.output }}
+    <br>
+  {% endfor %}
+</form>
+{% endblock %}

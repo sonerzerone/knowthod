@@ -1,0 +1,25 @@
+{% extends 'accounts/base_accounts.html' %}
+
+{% block title %}
+Друзья
+{% endblock %}
+
+{% block content %}
+<form method="get">
+  {% csrf_token %}
+
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="{% url 'profile_friends_view_url' user.username %}">Мои друзья</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="{% url 'profile_friends_find_url' user.username %}">Поиск друзей</a>
+    </li>
+  </ul>
+
+  {% block content2 %}
+
+  {% endblock %}
+
+</form>
+{% endblock %}

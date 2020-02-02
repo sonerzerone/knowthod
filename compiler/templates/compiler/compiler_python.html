@@ -1,0 +1,14 @@
+{% extends 'compiler/base_compiler.html' %}
+
+{% block title %}
+Компилятор python
+{% endblock %}
+
+{% block content %}
+
+<form method="post">
+  {% csrf_token %}
+
+  {% include 'compiler/includes/compiler_form_template.html' %}
+
+{% endblock %}

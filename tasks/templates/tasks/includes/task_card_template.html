@@ -1,0 +1,11 @@
+<p>
+  <div class="card">
+    <div class="card-header">
+      {{ task.date_pub }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ task.title }}</h5>
+      <a href="{{ task.get_absolute_url }}" class="btn btn-primary">Перейти к задаче</a>
+    </div>
+  </div>
+</p>

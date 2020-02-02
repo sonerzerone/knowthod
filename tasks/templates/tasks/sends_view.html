@@ -1,0 +1,16 @@
+{% extends 'tasks/base_tasks.html' %}
+
+{% block title %}
+Задачи
+{% endblock %}
+
+
+{% block content %}
+
+{% for send in page_object.object_list %}
+  {% include 'tasks/includes/send_card_template.html' %}
+{% endfor %}
+
+
+
+{% endblock %}

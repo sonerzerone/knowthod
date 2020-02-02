@@ -1,0 +1,36 @@
+<div class="mb-3">
+    <label for="validationTextarea">Code</label>
+    <textarea name="code" class="form-control" id="validationTextarea" placeholder="Write your code here." required>{{ code }}</textarea>
+</div>
+
+<div class="mb-3">
+    <label for="validationTextarea">Input</label>
+    <textarea name="input" class="form-control" id="validationTextarea" placeholder="Write input here.">{{ input }}</textarea>
+</div>
+
+<button type="submit" class="btn btn-light">Запустить</button>
+</form>
+
+<div class="mb-3">
+    <label for="validationTextarea">Output</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" readonly>{{ resrun }}</textarea>
+</div>
+
+<div class="mb-3">
+    <label for="validationTextarea">Errors</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" readonly>{{ rescomp }}</textarea>
+</div>
+<!--
+<textarea name="input">{{ input }}</textarea><br>
+
+<button type="submit" class="btn btn-light">Запустить</button>
+</form>
+
+<br>
+
+<textarea readonly>{{ resrun }}</textarea>
+
+<br>
+
+<textarea readonly>{{ rescomp }}</textarea>
+-->

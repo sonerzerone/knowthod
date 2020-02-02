@@ -1,0 +1,17 @@
+{% extends 'tasks/base_tasks.html' %}
+
+{% block title %}
+{{ task.title }} - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+<h1 class="mt-5">
+  {{ task.title }}
+</h1>
+<p>
+  {{ task.body }}
+</p>
+<a href="{% url 'task_send_url' task.slug %}" class="btn btn-primary">Отправить задачу</a>
+<a href="{% url 'sends_view_url' task.slug %}" class="btn btn-primary">Отправленные решения</a>
+{% endblock %}
